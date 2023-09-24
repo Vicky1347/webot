@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #fbf2de;
+        }
+
+        
+        /* .logo{
+            width: 100%;
+            height: 40px;
+            position: sticky;
+            padding: 30px;
+            margin-left: 50px;
+        } */
+        .first{
+            height: 50em;
+            width: 100%;
+            background-color: #fbf2de;   
+            position: absolute;
+            z-index: 0;
+
+        }
+        .first1
+        {
+            height: 20em;
+            width: 50%;
+            background: transparent;
+            position: absolute;
+            margin-top: 15%;
+        }
+        .first1 h1:nth-child(1) {
+            color: #355c7d;
+            font-family: 'Fira Code', monospace;
+            font-weight: 800;
+            font-size: 25px;
+            margin: 0 0 0 35%;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 170px;
+            animation: type 3s steps(40,end) forwards;
+          }
+          
+          .first1 h1:nth-child(2) {
+            opacity: 0;
+            font-family: "Work Sans", sans-serif;
+            margin: 0 auto auto auto;
+            background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
+            font-weight: 800;
+            font-size: 90px;  
+            width: 430px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            overflow: hidden;
+            animation: shring-animation 3.2s steps(40,end) 3s infinite, blink .5s ;
+          }
+          
+          @keyframes shring-animation {
+            0% {
+              background-position: 0 0;
+              opacity: 0;
+              width: 0;
+            }
+            1% {
+              background-position: 0 0;
+              opacity: 1;
+              border-right: 1px solid orange;
+            }
+            50% {
+              background-position: 150px 0;
+              opacity: 1;
+              border-right: 1px solid orange;
+            }
+            100% {
+              background-position: 400px 0;
+              opacity: 1;
+              border-right: 1px solid orange;
+            }
+          }
+          
+          @keyframes type {
+            0% {
+              width: 0;
+            }
+            1%, 99%{
+              border-right: 1px solid orange;
+            }
+            100%{
+              border-right: none;
+            }
+          }
+          
+          @keyframes blink {
+            50% {
+              border-color: transparent;
+            }
+          }
+.img
+{
+    width: 50%;
+    height: 25em;
+    margin: 10% 45% ;
+    background: #c06c84;
+    background: url("https://ayurpalana.com/wp-content/uploads/2019/09/banner1.jpg");
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 1;
+}
+.second{
+   
+    height: 30em;
+    width: 100%;
+    background-color: rgb(247, 246, 246);
+    background-image:url(./sih.png);
+    background-size: cover;
+    
+}
+
+    </style>
+</head>
+<body>
+  <!-- navbar -->
+    
+    <!-- <nav class="logo">
+            <img src="logo_sih.png" alt="vedicbot" height="40px">
+    </nav> -->
+    <div>
+    <nav class="navbar   bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="logo_sih.png" alt="Logo" width="100%" height="30" class="d-inline-block align-text-top">
+          
+        </a>
+      </div>
+    </nav>
+  </div>
+    
+    
+    <div class="first">
+        
+        <div class="first1">
+                <h1>Hii! I AM</h1>
+                <h1>Vedicbot</h1>
+        </div>
+
+        <div class="img">
+            
+        </div>
+
+    
+    <div class="second">
+        
+        <div class="sec1"></div>
+        <div class="sec2"></div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- webhook -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="vedicbot"
+  agent-id="8041829f-d7d8-404e-b781-cdcd8369a995"
+  language-code="en"
+></df-messenger>
+</body>
+</html>
